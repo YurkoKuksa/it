@@ -373,10 +373,10 @@
         color: #34495e;
       }
 
-      @media (max-width: 820px) {
+      @media screen and (max-width: 820px) {
         .page {
           zoom: 0.45;
-          margin-top: 110px;
+          margin-top: 150px;
         }
       }
       @media print {
@@ -390,6 +390,7 @@
         .page {
           margin: 0;
           box-shadow: none;
+          zoom: 1;
         }
       }
     </style>
@@ -398,7 +399,8 @@
     <div class="toolbar">
       <button type="button" onclick="window.print()">Save as PDF</button>
       <button type="button" class="alt" onclick="window.print()">Print</button>
-      <small>In the print window, select "Save as PDF"</small>
+      <!-- <small>У вікні друку оберіть «Зберегти як PDF» · Поля: «Немає» · увімкніть «Фонова графіка»</small> -->
+      <!-- <small>In the print window, select "Save as PDF"</small> -->
     </div>
 
     <main class="page">
@@ -453,6 +455,7 @@
           <div class="chips">
             <span>HTML5</span><span>CSS3</span><span>JavaScript</span
             ><span>React</span><span>Node.js</span><span>REST API</span>
+            <span>Project Manager </span>
           </div>
         </section>
 
